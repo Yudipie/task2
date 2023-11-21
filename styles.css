@@ -1,0 +1,500 @@
+body{
+    margin: 0;
+    /* height: 100%;
+    width: 100%; */
+    font-family: 'Merriweather', serif;
+    margin-top: 14.5em;
+}
+
+#hidden-nav{
+    width: 100%;
+    height: 5vw;
+    background-color: white;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.160784);
+    top: -100%;
+    position: fixed;
+    transition: top 1s;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 6em; */
+    /* white-space: nowrap; */
+}
+
+.hidden-nav-div{
+    display: flex;
+    align-items: center;
+}
+
+.hidden-nav-a{
+    padding-left: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+}
+
+.hidden-nav-buttons{
+    display: flex;
+    align-items: center;
+    margin-left: 10vw;
+    min-width: 200px;
+    white-space: nowrap;
+}
+
+#main-header{
+    display: block;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.160784);
+    /* height: 13em; */
+    position: fixed;
+    top: 0;
+    transition: top 1s;
+}
+
+
+#app{
+    visibility: hidden;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+#title-img{
+    width: 475;
+    height: 45;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    padding-top:2px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.menu1{
+    padding-top: 0.2rem;
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+    width: 170px;
+    height: 41.8px;
+    border-top: 5px solid black;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.links{
+    color: #B00020;
+    font-size: 13px;
+    display: flex;
+    /* justify-content: center; */
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.link-span{
+    margin-right: 1vw;
+}
+
+.header-2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.red-links{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+#search{
+    font-size: 13px;
+    margin-left: 20px;
+    color: grey;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#search:hover{
+    color: black;
+}
+
+#free-trial{
+    font-size: 15px;
+    margin-right: 24px;
+    color: black;
+    text-decoration: none;
+    /* margin-left: 80px; */
+    font-weight: bold;
+}
+
+#free-trial::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100;
+    width: 0; 
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #B00020; /* Color of the underline */
+    transition: width 0.3s; /* Transition effect for the width */
+  }
+
+  #free-trial:hover::before {
+    width: 95px; /* Expand the underline to full width on hover */
+  }
+
+#subscribe{
+    background-color: #B00020;
+    border-radius: 3px;
+    /* padding: 10px; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 147px;
+    height: 3em;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 6px;
+    padding-top: 6px;
+    transition: 0.3s;
+}
+
+  #subscribe:hover{
+    background-color: black;
+  }
+
+.buttons{
+    margin-top: -10px;
+}
+
+#login{
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 3px;
+    height: 3em;
+    border: 2px solid #B00020;
+    color: #B00020;
+    margin-left: 10px;
+    width: 147px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+#login:hover{
+    color: white;
+    box-shadow: inset 200px 0 0 0 #b00020;
+}
+
+.grid-heading{
+    font-size: 1.375em;
+    font-weight: 900;
+    color: #B00020;
+    text-align: left;
+    margin-bottom: -0.5px;
+    /* position: relative; */
+    /* line-height: 1.2; */
+    /* display: block; */
+}
+
+.grid-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    width: 90vw;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 90vw;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+.grid-item{
+    cursor: pointer;
+}  
+
+.worldcup{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.news1{
+    display: flex;
+}
+
+.div-2{
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    width: 20vmax;
+    margin-left: 5vw;
+    border-right: 1px solid #dadada;
+}
+
+.premium{
+    font-family: 'Merriweather', serif;
+    font-weight: 800;
+    color: #b00020;
+}
+
+.div-2-div{
+    margin-top: 1.2vh;
+    border-bottom: 1px solid #dadada;
+}
+
+.div-2-anchor{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.div-2-anchor:hover{
+    text-decoration: underline;
+}
+
+.div-2-person{
+    font-size: 10px;
+    color: black;
+}
+
+.div-2-person:hover{
+    text-decoration: none;
+}
+
+.div-1{
+    margin-left: 1vw;
+    padding: 0.5vw;
+    width: 42vmax;
+    border-right: 1px solid #dadada;
+    padding-right: 1.5vw;
+    /* background-color: pink; */
+}
+
+h1{
+    font-size: 40px;
+}
+
+h1:hover{
+    text-decoration: underline;
+}
+
+.div-1-anchor{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.div-1-anchor:hover{
+    text-decoration: underline;
+}
+
+.div-1-person{
+    color: black;
+    font-size: 0.5vw;
+}
+
+.div-1-person:hover{
+    text-decoration: none;
+}
+
+@keyframes blink {
+        0% { background-color: #b00020;}
+        50% { background-color: transparent;}
+        100% { background-color: #b00020;}
+      }
+    
+.blinking-circle {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        background-color: #b00020;
+        animation: blink 1s infinite;
+      }
+
+#div-1-small{
+    display: flex;
+    justify-content: center;
+}
+
+.div-1-smaller{
+    display: flex;
+    flex-wrap: wrap;
+    width: 16em;
+    padding-right: 10px;
+    border-right: 1px solid #dadada;
+    padding-left: 10px;
+}
+
+.div-3{
+    width: 20vmax;
+    margin-left: 1vw;
+}
+
+.list-item::marker{
+    color: black;
+    font-size: 1em;
+    /* content: ''; */
+}
+
+
+
+.list-item{
+    margin-left: -1vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #dadada;
+    /* position: relative; */
+}
+
+.list-anchor{
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.list-anchor:hover{
+    text-decoration: underline;
+}
+
+.top-picks{
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    /* background-color: pink; */
+}
+
+.nav{
+    font-size: 30px;
+    color: #dadada;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.gallery{
+    display: flex;
+    align-items: center;
+}
+
+.gallery-grid{
+    display: flex;
+    overflow-x: hidden;
+    width: 95%;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out; /* not workin */
+}
+
+.gallery-img{
+    flex: 0 0 25%; /* Each column takes up 25% of the container width */
+    box-sizing: border-box;
+    /* padding: 10px; */
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    body{
+        margin-top: 11em;
+    }
+
+    #hidden-nav{
+        display: none;
+    }
+
+    .main-header {
+        width: 100vw;
+      }
+
+    .menu1{
+        display: none;
+    }
+    #app{
+        visibility: visible;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 2vw;
+    }
+    .title{
+        margin-top: 5vh;
+        margin-bottom: -5vh;
+        display: flex;
+        justify-content: flex-start;
+        width: 100vw;
+        text-align: left;
+    }
+
+    #title-img{
+        height: 28.24px;
+        width: auto;
+        /* margin-left: -15rem; */
+    }
+
+    #subscribe{
+        width: 100px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    #login{
+        width: 100px;
+        height: 20px;
+        font-size: 10px;
+        padding-bottom: 15px;
+    }
+    .header-2{
+        gap: 50px;
+        display: block;
+    }
+
+    .link-span{
+        margin-right: 0.5vw;
+    }
+
+    .links{
+        width: 100vw;
+    }
+
+    .red-links{
+        width: 97vw;
+    }
+
+    .div-2{
+        width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        margin-left: 3vw;
+    }
+
+    .news1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div-1{
+        width: 100vw;
+    }
+
+    .div-3{
+        width: 100vw;
+    }
+}
